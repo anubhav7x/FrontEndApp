@@ -1,0 +1,43 @@
+﻿<html>
+
+<body>
+    <div>
+        <br />
+        <div class="row">
+            <div class="col-md-6">
+                <p>Welcome user: <strong>{{currentUser.username}}</strong></p>
+                <p>Your are logged in as the <strong>{{currentUser.role}}</strong> role.</p>
+            </div>
+            <div class="col-md-6">
+                <img class="angular-logo" src='assets/angular.jpg' style="width: 535px; height: 140px;" />
+            </div>
+        </div>
+        <br />
+        <div class="row col-md-12">
+            <div id="first" class="card col-md-5 down">
+                <h4><i class="fa fa-book" aria-hidden="true"></i> Courses</h4>
+                <br />
+                <ul *ngFor="let course of topCourses">
+                    <p><b>{{course.Course.Name}}</b></p>
+                    <br />
+                    <p>{{course.Course.Description}}</p>
+                </ul>
+                <br />
+            </div>
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-1">
+            </div>
+            <div id="second" class="card col-md-5 down">
+                <h4><i class="fa fa-star" aria-hidden="true"></i> Features</h4>
+                <br />
+                <ul *ngFor="let feature of randomFeatures">
+                    <p><b>{{feature.FeatureName}}</b></p>
+                </ul>
+                <br />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

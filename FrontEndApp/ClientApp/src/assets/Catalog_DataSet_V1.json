@@ -1,0 +1,324 @@
+[
+    {
+        "id": "1001",
+        "Course": {
+            "Name": "Introduction to the C# Language and the .NET Framework",
+            "Description": "C# is an elegant and type-safe object-oriented language that enables developers to build a variety of secure and robust applications that run on the .NET Framework",
+            "Tags": [
+                {
+                    "Name": "C#,.Net"
+                }
+            ],
+            "Duration": 15
+        },
+        "Type": "Course"
+    },
+    {
+        "id": "1002",
+        "Course": {
+            "Name": "Xamarin",
+            "Description": "Xamarin is an open-source platform for building modern and performant applications for iOS, Android, and Windows with .NET. Xamarin is an abstraction layer that manages communication of shared code with underlying platform code. Xamarin runs in a managed environment that provides conveniences such as memory allocation and garbage collection.",
+            "Tags": [
+                {
+                    "Name": "C#,Xamarin"
+                }
+            ],
+            "Duration": 6
+        },
+        "Type": "Course"
+    },
+    {
+        "id": "1003",
+        "Course": {
+            "Name": "Introduction to F#",
+            "Description": "F# programming primarily involves defining types and functions that are type-inferred and generalized automatically. This allows your focus to remain on the problem domain and manipulating its data, rather than the details of programming.",
+            "Tags": [
+                {
+                    "Name": "C#,F#"
+                }
+            ],
+            "Duration": 15
+        },
+        "Type": "Course"
+    },
+    {
+        "id": "1004",
+        "Course": {
+            "Name": "Bing Spatial Data Services",
+            "Description": "The Bing™ Spatial Data Services Application Programming Interface (API) provides a Representational State Transfer (REST) interface that can geocode, store and query spatial data. This simple REST interface accomplishes tasks by setting parameters in a URL and then submitting the URL as an HTTP request.",
+            "Tags": [
+                {
+                    "Name": "Bing, Web, Maps"
+                }
+            ],
+            "Duration": 4
+        },
+        "Type": "Course"
+    },
+    {
+        "id": "1005",
+        "Course": {
+            "Name": "Bing Spatial Data Services",
+            "Description": "The Bing Maps SDK for Android and Bing Maps SDK for iOS are libraries for building mapping applications for Android and iOS. The SDKs feature a native map control and an accompanying map services API set. The map control is powered by a full vector 3D map engine with a number of standard mapping capabilities including displaying icons, drawing polylines and polygons, and overlaying texture sources. The engine brings in the same 3D Native support you know from the Xaml Map Control in Windows 10, including worldwide 3D elevation data (via our Digital Elevation Model).",
+            "Tags": [
+                {
+                    "Name": "Bing, Android , iOS"
+                }
+            ],
+            "Duration": 11
+        },
+        "Type": "Course"
+    },
+    {
+        "id": "1006",
+        "Course": {
+            "Name": "Azure Bot Service",
+            "Description": "Azure Bot Service and Bot Framework provide tools to build, test, deploy, and manage intelligent bots all in one place. Through the use of modular and extensible framework provided by the SDK, tools, templates, and AI services developers can create bots that use speech, understand natural language, handle questions and answers, and more.",
+            "Tags": [
+                {
+                    "Name": "Azure, BOT, AI"
+                }
+            ],
+            "Duration": 14
+        },
+        "Type": "Course"
+    },
+    {
+        "id": "1007",
+        "Course": {
+            "Name": "Dynamics 365 Business Central",
+            "Description": "Business Central is a business management solution for small and mid-sized organizations that automates and streamlines business processes and helps you manage your business. Highly adaptable and rich with features, Business Central enables companies to manage their business, including finance, manufacturing, sales, shipping, project management, services, and more. Companies can easily add functionality that is relevant to the region of operation, and that is customized to support even highly specialized industries.",
+            "Tags": [
+                {
+                    "Name": "Dynamics 365"
+                }
+            ],
+            "Duration": 13
+        },
+        "Type": "Course"
+    },
+    {
+        "id": "1008",
+        "Course": {
+            "Name": "Dynamics 365 Project Service Automation",
+            "Description": "The Project Service Automation (PSA) application helps organizations efficiently track, manage, and deliver project-based services, from the initial sale all the way to invoicing.",
+            "Tags": [
+                {
+                    "Name": "Dynamics 365, Project Service Automation"
+                }
+            ],
+            "Duration": 12
+        },
+        "Type": "Course"
+    },
+    {
+        "id": "1009",
+        "Course": {
+            "Name": "Asset Management",
+            "Description": "Asset Management is an advanced module for managing assets and maintenance jobs in Dynamics 365 Supply Chain Management. Asset Management integrates seamlessly with several modules in Finance and Operations apps.",
+            "Tags": [
+                {
+                    "Name": "Dynamics 365, Asset Management"
+                }
+            ],
+            "Duration": 14
+        },
+        "Type": "Course"
+    },
+    {
+        "id": "1010",
+        "Course": {
+            "Name": "Overview of Microsoft Graph",
+            "Description": "Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It provides a unified programmability model that you can use to access the tremendous amount of data in Office 365, Windows 10, and Enterprise Mobility + Security. Use the wealth of data in Microsoft Graph to build apps for organizations and consumers that interact with millions of users.",
+            "Tags": [
+                {
+                    "Name": "Graph API, REST API"
+                }
+            ],
+            "Duration": 12
+        },
+        "Type": "Course"
+    },
+    {
+        "id": "1011",
+        "Course": {
+            "Name": "Introduction to SharePoint Online",
+            "Description": "SharePoint Online is a cloud-based service that helps organizations share and manage content, knowledge, and applications. Classic SharePoint architecture is typically built using a hierarchical system of site collections and sub-sites, with inherited navigation, permissions, and site designs. Once built, this structure can be inflexible and difficult to maintain. In the modern SharePoint experience, every site is a site collection and all can be associated with a hub site which is a flat structure of sites that share navigation, branding, and other elements.",
+            "Tags": [
+                {
+                    "Name": "SharePoint, SharePoint Online, Administration"
+                }
+            ],
+            "Duration": 10
+        },
+        "Type": "Course"
+    },
+    {
+        "id": "1012",
+        "Course": {
+            "Name": "Power BI for consumers",
+            "Description": "Power BI is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights. Whether your data is a simple Excel spreadsheet, or a collection of data from different data sources, Power BI lets you easily connect to your data sources, visualize (or discover) what’s important, and share that with anyone or everyone you want.. As an end user or consumer, you are the person who receives dashboards, reports, and apps from colleagues. You work in Power BI service to review and interact with this content in order to make business decisions.",
+            "Tags": [
+                {
+                    "Name": "Power BI, Business Intelligence"
+                }
+            ],
+            "Duration": 9
+        },
+        "Type": "Course"
+    },
+    {
+        "id": "1013",
+        "Course": {
+            "Name": "Power BI Report Server",
+            "Description": "Power BI Report Server is an on-premises report server with a web portal in which you display and manage reports and KPIs. Along with it come the tools to create Power BI reports, paginated reports, mobile reports, and KPIs. Your users can access those reports in different ways: viewing them in a web browser or mobile device, or as an email in their in-box.",
+            "Tags": [
+                {
+                    "Name": "Power BI Report server, Power BI, On-Premise, Business Intelligence"
+                }
+            ],
+            "Duration": 8
+        },
+        "Type": "Course"
+    },
+    {
+        "id": "1014",
+        "Course": {
+            "Name": "Introduction to PowerApps",
+            "Description": "PowerApps is a suite of apps, services, connectors and data platform that provides a rapid application development environment to build custom apps for your business needs. Using PowerApps, you can quickly build custom business apps that connect to your business data stored either in the underlying data platform (Common Data Service) or in various online and on-premises data sources",
+            "Tags": [
+                {
+                    "Name": "Power Apps"
+                }
+            ],
+            "Duration": 7
+        },
+        "Type": "Course"
+    },
+    {
+        "id": "1015",
+        "Course": {
+            "Name": "PowerApps and Dynamics 365",
+            "Description": "Dynamics 365 applications, such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Marketing also use the underlying data platform (Common Data Service) used by PowerApps to store and secure data. This enables you to build apps using PowerApps and Common Data Service directly against your core business data already used within Dynamics 365 without the need for integration.",
+            "Tags": [
+                {
+                    "Name": "Power Apps, Dynamics 365"
+                }
+            ],
+            "Duration": 6
+        },
+        "Type": "Course"
+    },
+    {
+        "id": "1016",
+        "Course": {
+            "Name": "Power Query Overview",
+            "Description": "Power Query is the Microsoft Data Connectivity and Data Preparation technology that enables business users to seamlessly access data stored in hundreds of data sources and reshape it to fit their needs, with an easy to use, engaging and no-code user experience. Supported data sources include a wide range of file types, databases, Microsoft Azure services and many other third-party online services. Power Query also provides a Custom Connectors SDK so that third parties can create their own data connectors and seamlessly plug them into Power Query.",
+            "Tags": [
+                {
+                    "Name": "Power Query, Power BI"
+                }
+            ],
+            "Duration": 10
+        },
+        "Type": "Course"
+    },
+    {
+        "id": "1017",
+        "Course": {
+            "Name": "Shape and combine data using Power Query",
+            "Description": "With Power Query, you can connect to many different types of data sources, then shape the data to meet your needs, enabling you to create visual reports using Power BI Desktop that you can share with others. Shaping data means transforming the data – such as renaming columns or tables, changing text to numbers, removing rows, setting the first row as headers, and so on. Combining data means connecting to two or more data sources, shaping them as needed, then consolidating them into one useful query.",
+            "Tags": [
+                {
+                    "Name": "Power BI, Power Apps, Power Query"
+                }
+            ],
+            "Duration": 12
+        },
+        "Type": "Course"
+    },
+    {
+        "id": "1018",
+        "Course": {
+            "Name": "Introduction to PowerShell",
+            "Description": "PowerShell is a task-based command-line shell and scripting language built on .NET. PowerShell helps system administrators and power-users rapidly automate tasks that manage operating systems (Linux, macOS, and Windows) and processes. PowerShell commands let you manage computers from the command line. PowerShell providers let you access data stores, such as the registry and certificate store, as easily as you access the file system. PowerShell includes a rich expression parser and a fully developed scripting language.",
+            "Tags": [
+                {
+                    "Name": "PowerShell, Scripting"
+                }
+            ],
+            "Duration": 9
+        },
+        "Type": "Course"
+    },
+    {
+        "id": "1019",
+        "Course": {
+            "Name": "Entity Framework",
+            "Description": "Entity Framework (EF) Core is a lightweight, extensible, open source and cross-platform version of the popular Entity Framework data access technology. EF Core can serve as an object-relational mapper (O/RM), enabling .NET developers to work with a database using .NET objects, and eliminating the need for most of the data-access code they usually need to write. With EF Core, data access is performed using a model. A model is made up of entity classes and a context object that represents a session with the database, allowing you to query and save data",
+            "Tags": [
+                {
+                    "Name": "Entity Framework, C#"
+                }
+            ],
+            "Duration": 10
+        },
+        "Type": "Course"
+    },
+    {
+        "id": "1020",
+        "Course": {
+            "Name": "Microsoft Web Template Studio",
+            "Description": "Microsoft Web Template Studio (WebTS) is a Visual Studio Code Extension that accelerates the creation of new web applications using a wizard-based experience. WebTS enables developers to generate boilerplate code for a web application by choosing between different front-end frameworks, back-end frameworks, pages and cloud services. The resulting web app is well-formed, readable code that incorporates cloud services on Azure while implementing proven patterns and best practices. Sprinkled throughout the generated code we have links to Docs to provide useful insights. WebTS was created using TypeScript and React. Different combinations of generated code are merged together by Core Template Studio, which was made using .NET Core.",
+            "Tags": [
+                {
+                    "Name": "Visual Studio, Visual Studio Code, C#"
+                }
+            ],
+            "Duration": 7
+        },
+        "Type": "Course"
+    },
+    {
+        "id": "1021",
+        "Course": {
+            "Name": "Introduction to Angular JS",
+            "Description": "AngularJS is a toolset for building the framework most suited to your application development. It is fully extensible and works well with other libraries. Every feature can be modified or replaced to suit your unique development workflow and feature needs. Data-binding is an automatic way of updating the view whenever the model changes, as well as updating the model whenever the view changes. This is awesome because it eliminates DOM manipulation from the list of things you have to worry about. Controllers are the behavior behind the DOM elements. AngularJS lets you express the behavior in a clean readable form without the usual boilerplate of updating the DOM, registering callbacks or watching model changes.",
+            "Tags": [
+                {
+                    "Name": "Javascript, Scripting, HTML, Angular JS"
+                }
+            ],
+            "Duration": 8
+        },
+        "Type": "Course"
+    },
+    {
+        "id": "1022",
+        "Course": {
+            "Name": "Introduction to React JS",
+            "Description": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Build encapsulated components that manage their own state, then compose them to make complex UIs. React can also render on the server using Node and power mobile apps using React Native. React components implement a render() method that takes input data and returns what to display. This example uses an XML-like syntax called JSX. Input data that is passed into the component can be accessed by render() via this.props.",
+            "Tags": [
+                {
+                    "Name": "Javascript, Scripting, HTML, React JS"
+                }
+            ],
+            "Duration": 10
+        },
+        "Type": "Course"
+    },
+    {
+        "id": "1023",
+        "Course": {
+            "Name": "Protractor Overview",
+            "Description": "Protractor is an end-to-end test framework for Angular and AngularJS applications. Protractor runs tests against your application running in a real browser, interacting with it as a user would. Protractor is built on top of WebDriverJS, which uses native events and browser-specific drivers to interact with your application as a user would.",
+            "Tags": [
+                {
+                    "Name": "Scripting, Anguar JS, NPM"
+                }
+            ],
+            "Duration": 8
+        },
+        "Type": "Course"
+    }
+]

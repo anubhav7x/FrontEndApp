@@ -1,0 +1,49 @@
+{
+    "FeatureList": [
+        {
+            "FeatureName": "CanSeeRoleDetailsOnLandingPage"
+			,"Description": "Feature description goes here"
+            ,"IsEnabled": true
+            ,"CreatedBy": "Admin"
+            ,"LastUpdatedBy": "Admin"
+            ,"CreatedDate": "10/8/19, 2:57 PM"
+            ,"LastUpdatedDate": "10/8/19, 2:57 PM"
+        },
+        {
+            "FeatureName": "CanSetPreferancesForCourses"
+			,"Description": "Feature description goes here"
+            ,"IsEnabled": true
+            ,"CreatedBy": "Admin"
+            ,"LastUpdatedBy": "Admin"
+            ,"CreatedDate": "10/8/19, 2:57 PM"
+            ,"LastUpdatedDate": "10/8/19, 2:57 PM"
+        },
+        {
+            "FeatureName": "CanSortCourseDetails"
+			,"Description": "Feature description goes here"
+            ,"IsEnabled": true
+            ,"CreatedBy": "Admin"
+            ,"LastUpdatedBy": "Admin"
+            ,"CreatedDate": "10/8/19, 2:57 PM"
+            ,"LastUpdatedDate": "10/8/19, 2:57 PM"
+        },
+        {
+            "FeatureName": "Feature4"
+			,"Description": "Feature description goes here"
+            ,"IsEnabled": true
+            ,"CreatedBy": "Admin"
+            ,"LastUpdatedBy": "Admin"
+            ,"CreatedDate": "10/8/19, 2:57 PM"
+            ,"LastUpdatedDate": "10/8/19, 2:57 PM"
+        },
+        {
+            "FeatureName": "Feature5"
+			,"Description": "Feature description goes here"
+            ,"IsEnabled": true
+            ,"CreatedBy": "Admin"
+            ,"LastUpdatedBy": "Admin"
+            ,"CreatedDate": "10/8/19, 2:57 PM"
+            ,"LastUpdatedDate": "10/8/19, 2:57 PM"
+        }
+    ]
+}
