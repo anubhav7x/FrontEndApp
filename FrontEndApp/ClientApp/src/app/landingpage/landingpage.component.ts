@@ -6,6 +6,7 @@ import { UserService, AuthenticationService } from 'src/app/_services';
 import { Observable, from } from 'rxjs';
 import { HttpErrorResponse } from '@angular/common/http';
 import { Title } from '@angular/platform-browser';
+import { environment } from 'src/environments/environment';
 
 @Component({ templateUrl: 'landingpage.component.html' })
 export class LandingPageComponent {
@@ -13,7 +14,6 @@ export class LandingPageComponent {
   currentUser: User;
   users: User[] = [];
   courses: any[] = [];
-  private readonly jsonURL = 'assets/Catalog_DataSet_V1.json';
   constructor(
     private userService: UserService,
     private authenticationService: AuthenticationService,
@@ -30,7 +30,7 @@ export class LandingPageComponent {
   ngOnInit() {
     this.loading = true;
     this.titleService.setTitle('Courses Catalog');
-    this.http.get(this.jsonURL).subscribe(
+    this.http.get(`${environment.apiUrl}/api/courses`).subscribe(
       data => {
         this.courses = data as object[];
       },

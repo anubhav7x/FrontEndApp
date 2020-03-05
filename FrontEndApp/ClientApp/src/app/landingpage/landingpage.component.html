@@ -1,9 +1,4 @@
 <div class="container-fluid">
-    <div ng-if="$ctrl.totalResultCount>0 && !$ctrl.searchInProgress" class="col-xs-12">
-        <h5 class="c-heading-5">
-            {{$ctrl.getPaginationResult()}}
-        </h5>
-    </div>
     <ul *ngFor="let course of courses">
         <div class="card">
             <div class="card-body">
@@ -12,10 +7,4 @@
             </div>
         </div>
     </ul>
-    <div ng-if="$ctrl.totalResultCount>0 && !$ctrl.searchInProgress" class="col-xs-12">
-        <h5 class="c-heading-5">
-            {{$ctrl.getPaginationResult()}}
-        </h5>
-        <hr class="c-divider">
-    </div>
 </div>
