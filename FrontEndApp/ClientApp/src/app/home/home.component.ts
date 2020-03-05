@@ -7,6 +7,8 @@ import { UserService, AuthenticationService } from 'src/app/_services';
 import { Observable, from } from 'rxjs';
 import { HttpErrorResponse } from '@angular/common/http';
 import * as _ from 'lodash';
+import { environment } from 'src/environments/environment';
+import { LifecycleHooks } from '@angular/compiler/src/lifecycle_reflector';
 
 @Component({ templateUrl: 'home.component.html' })
 export class HomeComponent {
@@ -17,8 +19,6 @@ export class HomeComponent {
   topCourses: any[] = [];
   features: any[] = [];
   randomFeatures: any = [];
-  private readonly coursesJsonURL = 'assets/Catalog_DataSet_V1.json';
-  private readonly featuresJsonURL = 'assets/FeatureDataset.json';
   constructor(
     private userService: UserService,
     private authenticationService: AuthenticationService,
@@ -35,7 +35,7 @@ export class HomeComponent {
   ngOnInit() {
     this.loading = true;
     this.titleService.setTitle('Home');
-    this.http.get(this.coursesJsonURL).subscribe(
+    this.http.get(`${environment.apiUrl}/api/courses`).subscribe(
       coursesData => {
         this.courses = coursesData as object[];
         this.topCourses = _.sampleSize(this.courses, 3);
@@ -44,7 +44,7 @@ export class HomeComponent {
         console.log(err.message);
       }
     );
-    this.http.get(this.featuresJsonURL).subscribe(
+    this.http.get(`${environment.apiUrl}/api/features`).subscribe(
       featuresData => {
         this.features = featuresData as object[];
         this.features = convertToArray(this.features);
