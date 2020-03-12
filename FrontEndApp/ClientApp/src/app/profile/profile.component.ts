@@ -1,17 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { first } from 'rxjs/operators';
 import { User } from 'src/app/_models';
-import { UserService } from 'src/app/_services';
+import { UserService, AuthenticationService } from 'src/app/_services';
 import { Title } from '@angular/platform-browser';
 
 @Component({ templateUrl: 'profile.component.html' })
 export class ProfileComponent implements OnInit {
     loading = false;
+    currentUser: User;
     users: User[] = [];
 
     constructor(
         private userService: UserService,
-        private titleService: Title) { }
+        private authenticationService: AuthenticationService,
+        private titleService: Title) {
+        this.currentUser = this.authenticationService.currentUserValue;
+    }
 
     ngOnInit() {
         this.loading = true;
@@ -20,7 +24,6 @@ export class ProfileComponent implements OnInit {
             this.loading = false;
             this.users = users;
         });
-        console.log(this.users);
     }
 
     private loadAllUsers() {

@@ -1,2 +1,2 @@
-﻿export * from './alert.component';
+﻿export * from './_alert/alert.component';
 

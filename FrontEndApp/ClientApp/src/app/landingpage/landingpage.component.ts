@@ -10,10 +10,6 @@ import { environment } from 'src/environments/environment';
 
 @Component({ templateUrl: 'landingpage.component.html' })
 export class LandingPageComponent {
-  loading = false;
-  currentUser: User;
-  users: User[] = [];
-  courses: any[] = [];
   constructor(
     private userService: UserService,
     private authenticationService: AuthenticationService,
@@ -26,6 +22,10 @@ export class LandingPageComponent {
       this.users = users;
     });
   }
+  loading = false;
+  currentUser: User;
+  users: User[] = [];
+  courses: any[] = [];
 
   ngOnInit() {
     this.loading = true;

@@ -21,8 +21,13 @@
                     <p><b>{{course.Course.Name}}</b></p>
                     <br />
                     <p>{{course.Course.Description}}</p>
+                    <br />
+                    <a [routerLink]='["/learningpath", course.id]'><b>View Details <span><i
+                                    class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></b></a>
                 </ul>
                 <br />
+                <a routerLink='/courses'><b>See All Courses <span><i class="fa fa-chevron-circle-right"
+                                aria-hidden="true"></i></span></b></a>
             </div>
             <div class="col-md-1">
             </div>
@@ -35,6 +40,8 @@
                     <p><b>{{feature.FeatureName}}</b></p>
                 </ul>
                 <br />
+                <a routerLink='/features'><b>See All Features <span><i class="fa fa-chevron-circle-right"
+                    aria-hidden="true"></i></span></b></a>
             </div>
         </div>
     </div>

@@ -41,7 +41,7 @@ const routes: Routes = [
         canActivate: [AuthGuard]
     },
     {
-        path: 'learningpath',
+        path: 'learningpath/:id',
         component: LearningPathComponent,
         canActivate: [AuthGuard]
     },
