@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { appRoutingModule } from './app.routing';
 import { HeaderComponent } from './_component/_header/header.component';
@@ -15,13 +15,15 @@ import { LandingPageComponent } from './landingpage';
 import { ProfileComponent } from './profile';
 import { AlertComponent } from './_component';
 import { LearningPathComponent } from './learningpath';
+import { FilterPipe } from './_component/_filter/filter.pipe';
 
 @NgModule({
     imports: [
         BrowserModule,
         ReactiveFormsModule,
         HttpClientModule,
-        appRoutingModule
+        appRoutingModule,
+        FormsModule
     ],
     declarations: [
         AppComponent,
@@ -33,7 +35,8 @@ import { LearningPathComponent } from './learningpath';
         LandingPageComponent,
         ProfileComponent,
         LearningPathComponent,
-        AlertComponent
+        AlertComponent,
+        FilterPipe
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
