@@ -1,24 +1,15 @@
 ﻿<html>
 
-<head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-</head>
-
 <body>
     <div class="container-fluid">
         <div class="card mt-4">
             <h4 class="card-header">Features</h4>
             <div class="card-body">
                 <p>This page can be accessed only by administrators.</p>
-                <h3>All registered users:</h3>
+                <h3>Features List</h3>
                 <ul>
-                    <li *ngFor="let user of users">
-                        {{user.username}}
-                        - <button (click)="deleteUser(user.id)" class="button-primary">Delete</button>
+                    <li *ngFor="let feature of features">
+                        {{feature.FeatureName}}
                     </li>
                 </ul>
                 <div>

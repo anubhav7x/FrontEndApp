@@ -11,7 +11,6 @@ import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { HomeComponent } from './home';
 import { FeaturesComponent } from './features';
 import { LoginComponent } from './login';
-import { RegisterComponent } from './register';
 import { LandingPageComponent } from './landingpage';
 import { ProfileComponent } from './profile';
 import { AlertComponent } from './_component';
@@ -29,7 +28,6 @@ import { LearningPathComponent } from './learningpath';
         HomeComponent,
         FeaturesComponent,
         LoginComponent,
-        RegisterComponent,
         HeaderComponent,
         FooterComponent,
         LandingPageComponent,

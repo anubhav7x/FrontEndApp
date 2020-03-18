@@ -4,7 +4,7 @@
     <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav" *ngIf="currentUser">
             <a class="nav-item nav-link" routerLink="/"><i class="fa fa-fw fa-home"></i>Home</a>
-            <a class="nav-item nav-link" routerLink="/courses"><i class="fa fa-book" aria-hidden="true"></i>
+            <a class="nav-item nav-link" routerLink="/courses" *ngIf="isAdmin"><i class="fa fa-book" aria-hidden="true"></i>
                 Courses</a>
             <a class="nav-item nav-link" routerLink="/features" *ngIf="isAdmin"><i class="fa fa-star"
                     aria-hidden="true"></i> Features</a>

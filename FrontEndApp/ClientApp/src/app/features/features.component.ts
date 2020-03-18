@@ -1,36 +1,36 @@
 import { Component, OnInit } from '@angular/core';
-import { first } from 'rxjs/operators';
-import { User } from 'src/app/_models';
-import { UserService } from 'src/app/_services';
 import { Title } from '@angular/platform-browser';
+import { environment } from 'src/environments/environment';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
 @Component({ templateUrl: 'features.component.html' })
 export class FeaturesComponent implements OnInit {
     loading = false;
-    users: User[] = [];
+    features: any[] = [];
 
     constructor(
-        private userService: UserService,
-        private titleService: Title) { }
+        private titleService: Title,
+        private http: HttpClient
+        ) { }
 
     ngOnInit() {
         this.loading = true;
         this.titleService.setTitle('Features');
-        this.userService.getAll().pipe(first()).subscribe(users => {
-            this.loading = false;
-            this.users = users;
-        });
-    }
-
-    private loadAllUsers() {
-        this.userService.getAll()
-            .pipe(first())
-            .subscribe(users => this.users = users);
-    }
-
-    deleteUser(id: number) {
-        this.userService.delete(id)
-            .pipe(first())
-            .subscribe(() => this.loadAllUsers());
+        this.http.get(`${environment.apiUrl}/api/features`).subscribe(
+            featuresData => {
+                this.features = featuresData as object[];
+                this.features = convertToArray(this.features);
+                function convertToArray(obj) {
+                    if (obj.FeatureList instanceof Array) {
+                        return obj.FeatureList;
+                    } else {
+                        return [obj.FeatureList];
+                    }
+                }
+            },
+            (err: HttpErrorResponse) => {
+                console.log(err.message);
+            }
+        );
     }
 }

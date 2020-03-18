@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home';
 import { FeaturesComponent } from './features';
 import { LoginComponent } from './login';
-import { RegisterComponent } from './register';
 import { LandingPageComponent } from './landingpage';
 import { ProfileComponent } from './profile';
 import { AuthGuard } from './_helpers';
@@ -27,13 +26,10 @@ const routes: Routes = [
         component: LoginComponent
     },
     {
-        path: 'register',
-        component: RegisterComponent
-    },
-    {
         path: 'courses',
         component: LandingPageComponent,
-        canActivate: [AuthGuard]
+        canActivate: [AuthGuard],
+        data: { roles: [Role.Admin] }
     },
     {
         path: 'profile',
@@ -43,7 +39,8 @@ const routes: Routes = [
     {
         path: 'learningpath/:id',
         component: LearningPathComponent,
-        canActivate: [AuthGuard]
+        canActivate: [AuthGuard],
+        data: { roles: [Role.Admin] }
     },
 
     // otherwise redirect to home
