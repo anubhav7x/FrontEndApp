@@ -1,7 +1,7 @@
 ﻿import { Component, OnInit } from '@angular/core';
 import { first } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
-import { User, Features } from 'src/app/_models';
+import { User, Features, Role } from 'src/app/_models';
 import { Title } from '@angular/platform-browser';
 import { UserService, AuthenticationService } from 'src/app/_services';
 import { Observable, from } from 'rxjs';
@@ -49,9 +49,9 @@ export class HomeComponent {
         this.features = convertToArray(this.features);
         function convertToArray(obj) {
           if (obj.FeatureList instanceof Array) {
-              return obj.FeatureList;
+            return obj.FeatureList;
           } else {
-              return [obj.FeatureList];
+            return [obj.FeatureList];
           }
         }
         this.randomFeatures = _.sampleSize(this.features, 3);
@@ -60,5 +60,9 @@ export class HomeComponent {
         console.log(err.message);
       }
     );
+  }
+
+  get isAdmin() {
+    return this.currentUser && this.currentUser.role === Role.Admin;
   }
 }
