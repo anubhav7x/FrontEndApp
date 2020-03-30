@@ -2,20 +2,31 @@
     <h3>Courses Catalog</h3>
     <h5>Description for Courses Catalog</h5>
     <div class="input-group md-form form-sm form-2 pl-0">
-        <input class="form-control my-0 py-1 amber-border col-md-5" type="text" [(ngModel)]="searchText" placeholder="Search for a Course"
-            aria-label="Search">
+        <input class="form-control my-0 py-1 amber-border col-md-5" type="text" [(ngModel)]="searchText"
+            placeholder="Search for a Course" aria-label="Search">
         <div class="col-md-5">
-            <select name="Sort By" class="rounded-inputs20 select-select col-md-5">
-                <option>Id</option>
-                <option>Name</option>
-                <option>Duration</option>
-            </select>
         </div>
+        <div class="row">
+            <div class="col">
+                <div ngbDropdown class="d-inline-block">
+                    <button class="btn btn-outline-primary" id="dropdownBasic1"
+                        ngbDropdownToggle>{{selectedSortOrder}}</button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1" *ngFor="let course of courses">
+                        <button class="dropdown-item" [class.active]="order === 'id'"
+                            (click)="setOrder('id')">Id</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <div class="container-fluid">
         <h3>Courses</h3>
-        <ul *ngFor="let course of courses | filter : searchText">
+        <h5>Showing {{config.pageSize}} of {{courses.length}} courses</h5>
+        <ul *ngFor="let course of courses | filter : searchText 
+            | slice: (page-1) * config.pageSize : (page-1) * config.pageSize + config.pageSize  
+            | orderBy: order : reverse :'case-insensitive'">
             <div class="card">
                 <div class="card-body">
                     <a [routerLink]='["/learningpath", course.id]'><b>{{course.Course.Name}}</b></a>
@@ -23,5 +34,8 @@
                 </div>
             </div>
         </ul>
+        <h5>Showing page {{page}} of {{totalPages}}</h5>
+        <ngb-pagination class="d-flex justify-content-center" [collectionSize]="courses.length" [(page)]="page"
+            [maxSize]="config.pageSize" [rotate]="true"></ngb-pagination>
     </div>
 </div>

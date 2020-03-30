@@ -4,15 +4,25 @@
     <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav" *ngIf="currentUser">
             <a class="nav-item nav-link" routerLink="/"><i class="fa fa-fw fa-home"></i>Home</a>
-            <a class="nav-item nav-link" routerLink="/courses" *ngIf="isAdmin"><i class="fa fa-book" aria-hidden="true"></i>
+            <a class="nav-item nav-link" routerLink="/courses" *ngIf="isAdmin"><i class="fa fa-book"
+                    aria-hidden="true"></i>
                 Courses</a>
             <a class="nav-item nav-link" routerLink="/features" *ngIf="isAdmin"><i class="fa fa-star"
                     aria-hidden="true"></i> Features</a>
-            <a class="nav-item nav-link" routerLink="/" (click)="logout()">Log Out</a>
         </ul>
         <ul class="nav navbar-nav ml-auto">
-            <button class="btn bg-light" type="button" routerLink="/profile"><b> My Profile </b><i
-                    class="fa fa-user-circle" aria-hidden="true"></i></button>
+            <div class="row">
+                <div class="col">
+                    <div ngbDropdown class="d-inline-block">
+                        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle><b>My Account <i
+                                    class="fa fa-user-circle" aria-hidden="true"></i></b></button>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                            <button class="dropdown-item" routerLink="/profile">Edit Profile</button>
+                            <button class="dropdown-item" routerLink="/" (click)="logout()">Log Out</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </ul>
     </div>
 </nav>

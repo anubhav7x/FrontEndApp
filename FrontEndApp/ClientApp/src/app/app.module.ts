@@ -13,9 +13,11 @@ import { FeaturesComponent } from './features';
 import { LoginComponent } from './login';
 import { LandingPageComponent } from './landingpage';
 import { ProfileComponent } from './profile';
-import { AlertComponent } from './_component';
+import { AlertComponent } from './_component/_alert/alert.component';
 import { LearningPathComponent } from './learningpath';
 import { FilterPipe } from './_component/_filter/filter.pipe';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { OrderModule } from 'ngx-order-pipe';
 
 @NgModule({
     imports: [
@@ -23,7 +25,9 @@ import { FilterPipe } from './_component/_filter/filter.pipe';
         ReactiveFormsModule,
         HttpClientModule,
         appRoutingModule,
-        FormsModule
+        FormsModule,
+        NgbModule,
+        OrderModule
     ],
     declarations: [
         AppComponent,
